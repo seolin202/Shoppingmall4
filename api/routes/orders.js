@@ -7,7 +7,25 @@ const router = express.Router();
 // 오더와 관련된 api, 즉 order CRUD는 여기서 진행한다
 router.get('/', (req, res) => {
     res.json({
-        msg: 'ordersdata get'
+        msg: 'orders data get'
+    });
+});
+
+router.post('/', (req, res) => {
+    res.json({
+        msg: "orders posting"
+    });
+});
+
+router.patch('/', (req, res) => {
+    res.json({
+        msg: "orders updated"
+    });
+});
+
+router.delete('/', (req, res) => {
+    res.json({
+        msg: "orders deleted"
     });
 });
 

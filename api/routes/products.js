@@ -11,5 +11,22 @@ router.get('/', (req, res) => {
     });
 });
 
+router.post('/', (req, res) => {
+    res.json({
+        msg: "products posting"
+    });
+});
+
+router.patch('/', (req, res) => {
+    res.json({
+        msg: "products updated"
+    });
+});
+
+router.delete('/', (req, res) => {
+    res.json({
+        msg: "products deleted"
+    });
+});
 // router를 모듈화하고 out
 module.exports = router;
